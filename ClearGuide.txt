@@ -37,9 +37,9 @@ For enquiries and general communication, the project contact email is:
 
 - routewise.temp@proton.me
 
-Public updates and project documentation will be shared through:
+Public updates, walkthroughs, and project documentation will be shared through:
 
-- YouTube: youtube.com/@icarus-svg
+- YouTube: https://www.youtube.com/@icarus-svg
 
 ## Final Notes
 

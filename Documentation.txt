@@ -1,2 +1,18 @@
-# Goal of this doc is to document everything that is done so anyone that wants to fork can easily modify and know what 
-what does
+# Routewise Documentation
+
+The goal of this document is to record project progress, decisions, and implementation notes so that anyone who forks or contributes to the project can understand the purpose and direction of the work.
+
+## Public Updates
+
+Progress updates, project walkthroughs, and public documentation will be shared on the Routewise YouTube channel:
+
+- https://www.youtube.com/@icarus-svg
+
+## Project Purpose
+
+Routewise is intended to be a practical learning project with the potential to become a monetized product. The platform is designed to help companies monitor vehicles and operational information from a browser, with a local-hosted deployment model unless otherwise stated.
+
+## Contact
+
+- Email: routewise.temp@proton.me
+- YouTube: https://www.youtube.com/@icarus-svg

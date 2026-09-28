@@ -59,7 +59,13 @@ Support is an important part of the Routewise experience. The project aims to in
 ## Contact
 
 - Email: routewise.temp@proton.me
-- YouTube: youtube.com/@icarus-svg
+- YouTube: https://www.youtube.com/@icarus-svg
+
+## Project Updates
+
+Progress, walkthroughs, and public updates will be shared on the project YouTube channel:
+
+- https://www.youtube.com/@icarus-svg
 
 ## Notes
 
