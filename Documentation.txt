@@ -1,0 +1,2 @@
+# Goal of this doc is to document everything that is done so anyone that wants to fork can easily modify and know what 
+what does
