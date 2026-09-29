@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Report a Problem</title>
+</head>
+<body>
+	<header>
+		<h1>Report a Problem</h1>
+		<a href="maintenance.html">Back to maintenance</a>
+	</header>
+
+	<main>
+		<form>
+			<p>
+				<label for="item">Truck or item</label>
+				<select id="item" name="item" required>
+					<option value="">Select a truck or item</option>
+				</select>
+			</p>
+			<p>
+				<label for="issue-type">Issue type</label>
+				<select id="issue-type" name="issue-type" required>
+					<option value="">Select an issue type</option>
+					<option value="maintenance">Maintenance</option>
+					<option value="damage">Damage</option>
+					<option value="other">Other</option>
+				</select>
+			</p>
+			<p>
+				<label for="priority">Priority</label>
+				<select id="priority" name="priority" required>
+					<option value="normal">Normal</option>
+					<option value="urgent">Urgent</option>
+				</select>
+			</p>
+			<p>
+				<label for="description">Description</label>
+				<textarea id="description" name="description" rows="5" required></textarea>
+			</p>
+			<p>
+				<label for="reported-date">Date noticed</label>
+				<input id="reported-date" name="reported-date" type="date">
+			</p>
+			<button type="submit">Submit report</button>
+		</form>
+	</main>
+</body>
+</html>

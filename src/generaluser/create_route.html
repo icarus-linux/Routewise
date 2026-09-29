@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Create Route</title>
+</head>
+<body>
+	<header>
+		<h1>Create Route</h1>
+		<a href="routes.html">Back to routes</a>
+	</header>
+
+	<main>
+		<form>
+			<p>
+				<label for="route-name">Route name</label>
+				<input id="route-name" name="route-name" type="text" required>
+			</p>
+			<p>
+				<label for="start-location">Start location</label>
+				<input id="start-location" name="start-location" type="text" required>
+			</p>
+			<p>
+				<label for="destination">Destination</label>
+				<input id="destination" name="destination" type="text" required>
+			</p>
+			<p>
+				<label for="vehicle">Vehicle</label>
+				<select id="vehicle" name="vehicle">
+					<option value="">Select a vehicle</option>
+				</select>
+			</p>
+			<p>
+				<label for="route-date">Route date</label>
+				<input id="route-date" name="route-date" type="date">
+			</p>
+			<p>
+				<label for="route-notes">Notes</label>
+				<textarea id="route-notes" name="route-notes" rows="4"></textarea>
+			</p>
+			<button type="submit">Save route</button>
+		</form>
+	</main>
+</body>
+</html>
