@@ -1,40 +1,60 @@
 # Routewise Documentation
 
-This document records the project purpose, structure, and ongoing documentation standards so contributors and future users can understand the workflow and project direction.
+This document describes the current prototype, its page organization, and the intended company roles.
 
-## Project Purpose
+## Project Status
 
-Routewise is a browser-based business platform intended to help companies track vehicle activity, operational information, and company-level visibility in a simple and affordable way. It is currently being developed as a practical learning project with long-term potential for real-world use.
+Routewise is an early browser-based HTML prototype for company fleet and operations workflows. The current pages define a starting interface; they are not connected to a server, database, authentication provider, or payment system.
 
-## Current Project Structure
+## Page Inventory
 
-The project follows a clean organization model to keep the root folder uncluttered:
+### Entry
+- src/index.html: demo login page. The Login link opens the general-user dashboard and does not validate the entered username or password.
 
-- readme.md: project overview and entry point
-- src/: front-end application files
-- assets/: visual elements and branding resources
-- docs/: all text documentation and project guides
-- docs/guides/: user guide and troubleshooting documentation
+### General users
+- src/generaluser/dashboard.html: summary tables for fleet/items, maintenance, token activity, company activity, and team access.
+- src/generaluser/fleet.html: fleet and tracked-item table.
+- src/generaluser/routes.html: route table; links to create_route.html.
+- src/generaluser/create_route.html: route entry form.
+- src/generaluser/maintenance.html: maintenance and issue overview; links to log_problem.html.
+- src/generaluser/log_problem.html: issue report form.
+- src/generaluser/logs.html: issue and maintenance history table.
+- src/generaluser/tokens.html: read-only token activity view.
 
-## Documentation Standards
+### Company admins
+- src/Admin/admin_dashboard.html: company summary and links to company-admin pages.
+- src/Admin/user_overviews.html: company user table; links to create_new_user.html.
+- src/Admin/create_new_user.html: user creation form with general-user and company-admin roles.
+- src/Admin/token_management.html: company token purchase history placeholder.
+- src/Admin/activity_logs.html: company activity history placeholder.
+- src/Admin/company_settings.html: company details and preferences placeholders.
 
-- Keep the main project root limited to the README and required code/assets.
-- Store support documents in the docs folder.
-- Use clear naming conventions for project files.
-- Keep documentation consistent with the current codebase.
-- Update the README whenever a major new folder or structure change is introduced.
+## Intended Permissions
 
-## Public Updates
+General users are intended to use operational pages and view token activity. They cannot manage users or buy tokens. Company admins are intended to manage company users, purchase tokens for the company, change company settings, and edit company records. These are product requirements only; the static pages do not enforce permissions. Server-side authorization will be required before using real company data.
 
-Progress updates, walkthroughs, and project announcements will be shared through the project YouTube channel:
+## Current Behavior and Limitations
 
-- https://www.youtube.com/@icarus-svg
+- Tables use empty-state text because no data source is connected.
+- Forms are visual prototypes. They do not save data or create accounts, routes, or issue reports.
+- The login page is a navigation link, not authentication.
+- Token balances and purchases are not implemented.
+- Admin pages can be opened directly and are not protected by role checks.
+- The prototype can be previewed by opening src/index.html in a browser. The company-admin dashboard can be opened directly at src/Admin/admin_dashboard.html.
 
-## Contact
+## Repository Structure
+
+- readme.md: project overview and status
+- src/index.html: demo entry/login page
+- src/generaluser/: general-user HTML pages
+- src/Admin/: company-admin HTML pages
+- assets/: branding and visual assets
+- docs/: project guides and documentation
+- docs/guides/: user guide and troubleshooting guide
+
+Keep documentation in docs/ and update the README when project folders or major capabilities change. Text documentation is kept in plain text for now; PDF conversion is a later distribution or archiving step.
+
+## Contact and Updates
 
 - Email: routewise.temp@proton.me
 - YouTube: https://www.youtube.com/@icarus-svg
-
-## Future Note
-
-Text-based documentation should later be converted into PDF format for sharing and archiving.

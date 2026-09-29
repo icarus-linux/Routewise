@@ -1,52 +1,42 @@
-Routewise is a browser-based platform for companies to monitor vehicles, operations, and internal business activity through a simple web interface. The project is being developed as a practical learning initiative with potential for future monetization and real-world deployment.
+ROUTEWISE QUICK GUIDE
 
-The platform is intended to be used in a local or controlled environment unless otherwise stated. The goal is to provide businesses with clear access to operational visibility without unnecessary complexity.
+Purpose
+Routewise is a browser-based fleet and operations management project. It is currently an early static HTML prototype intended to establish the page structure and user workflows.
 
-## Project Vision
+Current Pages
+- src/index.html: demo login page. The Login link opens the general-user dashboard without checking credentials.
+- src/generaluser/dashboard.html: general-user dashboard overview.
+- src/generaluser/fleet.html: fleet and item list placeholder.
+- src/generaluser/routes.html and create_route.html: route list and route form placeholders.
+- src/generaluser/maintenance.html, log_problem.html, and logs.html: maintenance overview, issue report form, and issue history placeholders.
+- src/generaluser/tokens.html: read-only token activity placeholder.
+- src/Admin/admin_dashboard.html: company-admin overview and links.
+- src/Admin/user_overviews.html and create_new_user.html: company user list and creation form placeholders.
+- src/Admin/token_management.html: company token purchase and balance placeholder.
+- src/Admin/activity_logs.html and company_settings.html: company activity and settings placeholders.
 
-Routewise aims to deliver a modern, minimal, and user-friendly experience for managing company operations. The platform should be simple enough for everyday use while still offering the tools needed for administration and oversight.
+Intended Roles
+- General users handle everyday fleet, route, and issue workflows. They may view token information but cannot purchase tokens or manage company users.
+- Company admins manage users, company settings, token purchases, and company records.
+- The current HTML prototype does not enforce these roles or permissions.
 
-## Core Product Goals
+Current Limitations
+The pages contain static markup only. Forms do not create or save records, tables do not load company data, and login, token purchases, and access control are not connected to a backend. Empty tables and unavailable values are expected.
 
-- Browser-based access
-- Minimal and modern user experience
-- Clear navigation and dashboard flow
-- Company-level operational visibility
-- Admin controls for users and settings
-- Simple onboarding for new companies
-- Low-cost and scalable project approach
-- Support channels and public documentation
-
-## Business Direction
-
-The project is intended to balance usefulness, affordability, and clarity. It should remain cost-conscious while still providing value to businesses that need to track vehicles and operational information efficiently.
-
-## Project Structure
-
-The repository follows a clean structure so the main project folder stays organized:
-
-- readme.md: main project overview
-- src/: application code and front-end files
+Project Folders
+- src/: application pages
+- src/generaluser/: general-user pages
+- src/Admin/: company-admin pages
 - assets/: logos and visual assets
-- docs/: project documentation, references, and guides
-- docs/guides/: user guide and troubleshooting guide
+- docs/: project documentation
+- docs/guides/: user and troubleshooting guides
 
-This structure keeps the project easy to navigate and avoids mixing code, assets, and documentation in the same folder.
+Preview
+Open src/index.html in a browser. To inspect the company-admin area, open src/Admin/admin_dashboard.html directly. The login page currently routes only to the general-user dashboard.
 
-## Support Model
+Project direction
+Routewise aims to become a clear, affordable tool for company fleet operations. Support services, live data, payments, and production-ready account security are future work, not features of the current prototype.
 
-A strong support structure is part of the project vision. Routewise aims to provide:
-
-- AI support available 24/7
-- Live support during the day
-- Public updates and walkthroughs
-- Clear documentation for users and contributors
-
-## Contact
-
+Contact
 - Email: routewise.temp@proton.me
 - YouTube: https://www.youtube.com/@icarus-svg
-
-## Final Notes
-
-Routewise is designed to be practical, adaptable, and easy to grow over time. The project values documentation, clear communication, and maintainable structure so contributors can understand the system and continue improving it.

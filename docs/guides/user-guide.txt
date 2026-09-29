@@ -1,39 +1,42 @@
 # Routewise User Guide
 
-## Overview
+## Current Version
 
-Routewise is a browser-based platform for monitoring vehicle activity, company operations, and related business information from a single dashboard.
+This guide describes the static HTML prototype. Pages and forms show the planned workflow, but they do not load or save real company data.
 
-## Getting Started
+## Preview the General-User Pages
 
-1. Open the application in your browser.
-2. Sign in using your account credentials or create a new account if required.
-3. Open the dashboard to view live company and operational information.
-4. Navigate through the main sections to access vehicle data, admin tools, and user management features.
+1. Open src/index.html in a web browser.
+2. Entering credentials is optional; the fields are not validated.
+3. Select Login. The link opens src/generaluser/dashboard.html for every visitor.
+4. Open other HTML files under src/generaluser/ directly to inspect their placeholders.
 
-## Main Features
+## Preview the Company-Admin Pages
 
-- Fleet and vehicle tracking
-- Company dashboard overview
-- Admin controls for settings and access
-- User management tools
-- Operational visibility for business workflow monitoring
+Open src/Admin/admin_dashboard.html directly. Its navigation links open the company user list, user creation form, token management, activity history, and company settings pages.
 
-## Typical Workflow
+## Page Guide
 
-- Log in to the application
-- Review the dashboard summary
-- Open relevant operational sections
-- Manage users or company settings when required
-- Use the available tools to keep company information organized and visible
+- Dashboard: overview tables for fleet/items, maintenance, tokens, activity, and team access.
+- Fleet: planned list of company trucks and tracked items.
+- Routes: planned route list. The Create a route link opens the route form.
+- Create Route: fields for route name, start, destination, vehicle, date, and notes.
+- Maintenance and Issues: planned maintenance and issue overview. Report a problem opens the issue form.
+- Report a Problem: fields for the affected item, issue type, priority, description, and date noticed.
+- Issue and Maintenance Logs: planned history of reported issues and service records.
+- Token Balance: general users can view token activity; purchasing is reserved for company admins.
+- Company Admin Dashboard: company summary and links to admin tools.
+- Company Users: planned user list. Create a user opens the user form.
+- Create User: fields for name, email, and company role.
+- Token Management: planned company token balance and purchase history.
+- Company Activity: planned company-wide activity history.
+- Company Settings: placeholder for company details and preferences.
 
-## Best Practices
+## Important Limitations
 
-- Keep credentials secure
-- Review the dashboard regularly for status updates
-- Use admin settings only when needed
-- Update documentation and support files whenever the system changes
+- Form buttons do not submit data to a server.
+- Empty tables and unavailable values are expected until a data source is added.
+- The demo login does not authenticate users or choose a page based on role.
+- Admin pages are not access-controlled. Do not use the prototype with sensitive or real company data.
 
-## Support
-
-If you are unable to access the platform or need help with setup, refer to the troubleshooting guide and project documentation.
+For common issues, see troubleshooting.txt in this folder.

@@ -1,27 +1,36 @@
-# Troubleshooting Guide
+# Routewise Troubleshooting Guide
+
+The current Routewise pages are static HTML prototypes. The following behavior is expected until authentication and data storage are implemented.
 
 ## Common Issues
 
-### Application does not load
-Check that the project is running in the correct local environment and confirm all required files are present.
+### Login does not check my credentials
+The Login control is a link to the general-user dashboard. It does not authenticate or validate the username and password fields.
 
-### Login or access problems
-Verify credentials and confirm that the user account has the correct permissions and access level.
+### Admin pages do not appear after login
+The demo login always opens the general-user dashboard. To preview the company-admin pages, open src/Admin/admin_dashboard.html directly.
 
-### Missing or incorrect data shown
-Refresh the page, confirm the environment is connected, and review the project configuration or relevant setup files.
+### Tables are empty
+The tables are placeholders and are not connected to a database or sample data source. Empty-state messages are expected.
 
-### Dashboard looks incomplete or empty
-Check whether the application is running properly and whether the required data source or local environment is available.
+### A form does not save anything
+The create-route, report-problem, and create-user forms have no server or storage handler. Submitting them will not create records.
 
-## Quick Checklist
+### Token balance or purchase information is unavailable
+Token balances and purchases are not implemented. General-user token information is planned as read-only; company-admin purchasing is a placeholder.
 
-- Confirm the app is running locally
-- Verify browser access and internet/local connectivity
-- Check login credentials and access permissions
-- Refresh the page before continuing
-- Review the documentation for setup or feature changes
+### A page link does not open
+Keep the existing directory structure so relative links work. General-user files belong in src/generaluser/ and company-admin files belong in src/Admin/.
 
-## Support
+## Preview Checklist
 
-If the issue continues, review the project documentation in the docs folder and contact the project maintainer through the contact information listed in the project files.
+- Open src/index.html in a browser.
+- Confirm the expected HTML file exists at the linked path.
+- Keep the src/generaluser/ and src/Admin/ folder names and capitalization unchanged.
+- Remember that current forms and tables are not connected to persistent data.
+
+## Security Note
+
+The prototype does not protect admin pages or enforce user roles. Do not use it to manage real users, payments, or sensitive company data. Authentication and server-side authorization must be implemented before deployment.
+
+For more information, see user-guide.txt and docs/Documentation.txt.

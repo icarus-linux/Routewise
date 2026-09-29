@@ -6,15 +6,15 @@ Routewise is being developed as a practical learning project with long-term pote
 
 ## Overview
 
-Routewise aims to give businesses a clear view of daily operations without adding unnecessary complexity. The focus is on a clean interface, easy navigation, and practical admin tools for managing company data and user access.
+Routewise aims to give businesses a clear view of daily fleet operations. The current project is an early static HTML prototype: its pages outline general-user and company-admin workflows, but do not yet provide authentication, persistence, live tracking, or payments.
 
-The project is designed to support:
+The planned product is designed to support:
 
 - Vehicle and fleet tracking
 - Company-level operational visibility
-- Simple user and admin management
-- Flexible onboarding for new companies
-- Clear communication and support channels
+- General-user route and issue workflows
+- Company-admin user management and token purchasing
+- Company settings and activity history
 
 ## Why Routewise
 
@@ -26,16 +26,16 @@ This project is built around a few core principles:
 - Provide practical admin tools for company staff
 - Support growth through documentation, communication, and refinement
 
-## Key Features
+## Current Prototype
 
-- Web-based access from any browser
-- Minimal and modern interface design
-- Easy navigation for daily use
-- Admin panels for managing companies and users
-- Add or remove users directly from the admin panel
-- Open-source project structure
-- Low-overhead, cost-conscious approach
-- New companies receive 10 free credits before paid access is required
+- Browser-openable HTML pages in `src/`
+- General-user page placeholders in `src/generaluser/`
+- Company-admin page placeholders in `src/Admin/`
+- Static forms and tables that define planned workflows
+
+The login link currently opens the general-user dashboard without validating credentials. Forms do not save data, and tables are not connected to a data source. Company-admin pages are not protected by authentication or role checks.
+
+The current pricing concept is to provide new companies with 10 free credits before paid access is required. Token balances and purchases are not implemented yet.
 
 ## Project Goals
 
@@ -49,12 +49,7 @@ The project is intended to balance usefulness, affordability, and clarity:
 
 ## Support and Communication
 
-Support is an important part of the Routewise experience. The project aims to include:
-
-- AI support available 24/7
-- Live support during the day for direct assistance
-- Clear communication channels for enquiries and ongoing support
-- Public documentation and progress updates via the project YouTube channel
+Support is part of the product direction. Planned support options include AI assistance, live support, clear communication channels, and public documentation. These services are not part of the current static prototype. Project updates are shared through the YouTube channel.
 
 ## Contact
 
@@ -72,7 +67,9 @@ Progress, walkthroughs, and public updates will be shared on the project YouTube
 The repository is organized to keep the root clean and easy to navigate:
 
 - readme.md stays in the main project folder as the primary entry point.
-- src/ contains the application HTML and front-end code.
+- src/index.html is the demo login page.
+- src/generaluser/ contains general-user pages for dashboards, fleet, routes, issues, logs, and token activity.
+- src/Admin/ contains company-admin pages for the admin dashboard, user management, token management, activity, and settings.
 - assets/ stores branding and image resources.
 - docs/ contains the project documentation, user guides, and troubleshooting files.
 - docs/guides/ contains the user guide and troubleshooting guide.
@@ -87,4 +84,4 @@ Routewise is positioned as an approachable, adaptable, and practical project int
 
 ## Status
 
-This repository is currently a project foundation and documentation hub. It is intended to evolve over time as features, workflows, and business requirements are clarified.
+This repository is currently a project foundation with static page prototypes and documentation. Backend storage, real authentication, role enforcement, live fleet data, and token payments remain future work.
