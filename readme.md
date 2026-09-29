@@ -31,9 +31,10 @@ This project is built around a few core principles:
 - Browser-openable HTML pages in `src/`
 - General-user page placeholders in `src/generaluser/`
 - Company-admin page placeholders in `src/Admin/`
-- Static forms and tables that define planned workflows
+- HTML table navigation at the top of each role page, linking only to pages in that role's folder
+- Static tables and text placeholders for planned workflows; create and report pages are not interactive forms
 
-The login link currently opens the general-user dashboard without validating credentials. Forms do not save data, and tables are not connected to a data source. Company-admin pages are not protected by authentication or role checks.
+The login link currently opens the general-user dashboard without validating credentials. Tables are not connected to a data source, and role-specific navigation does not provide access control. Company-admin pages are not protected by authentication or role checks.
 
 The current pricing concept is to provide new companies with 10 free credits before paid access is required. Token balances and purchases are not implemented yet.
 

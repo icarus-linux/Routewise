@@ -1,6 +1,6 @@
 # Routewise Troubleshooting Guide
 
-The current Routewise pages are static HTML prototypes. The following behavior is expected until authentication and data storage are implemented.
+The current Routewise pages are static HTML prototypes with table-based navigation and placeholders. The following behavior is expected until authentication and data storage are implemented.
 
 ## Common Issues
 
@@ -13,24 +13,24 @@ The demo login always opens the general-user dashboard. To preview the company-a
 ### Tables are empty
 The tables are placeholders and are not connected to a database or sample data source. Empty-state messages are expected.
 
-### A form does not save anything
-The create-route, report-problem, and create-user forms have no server or storage handler. Submitting them will not create records.
+### Create or report pages have no fields
+The create-route, report-problem, and create-user pages currently display placeholders only. Input and submission workflows have not been implemented.
 
 ### Token balance or purchase information is unavailable
 Token balances and purchases are not implemented. General-user token information is planned as read-only; company-admin purchasing is a placeholder.
 
 ### A page link does not open
-Keep the existing directory structure so relative links work. General-user files belong in src/generaluser/ and company-admin files belong in src/Admin/.
+Keep the existing directory structure so relative links work. General-user files belong in src/generaluser/ and company-admin files belong in src/Admin/. Each table navbar only links to pages in its own role folder.
 
 ## Preview Checklist
 
 - Open src/index.html in a browser.
 - Confirm the expected HTML file exists at the linked path.
 - Keep the src/generaluser/ and src/Admin/ folder names and capitalization unchanged.
-- Remember that current forms and tables are not connected to persistent data.
+- Remember that tables are not connected to persistent data and create/report pages are placeholders.
 
 ## Security Note
 
-The prototype does not protect admin pages or enforce user roles. Do not use it to manage real users, payments, or sensitive company data. Authentication and server-side authorization must be implemented before deployment.
+The prototype does not protect admin pages or enforce user roles. Separate navbar links are not security controls; any page may be opened directly by URL. Do not use it to manage real users, payments, or sensitive company data. Authentication and server-side authorization must be implemented before deployment.
 
 For more information, see user-guide.txt and docs/Documentation.txt.

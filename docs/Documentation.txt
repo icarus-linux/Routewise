@@ -1,30 +1,34 @@
 # Routewise Documentation
 
-This document describes the current prototype, its page organization, and the intended company roles.
+This document describes the current prototype, its page organization, the role-specific table navigation, and the intended company roles.
 
 ## Project Status
 
-Routewise is an early browser-based HTML prototype for company fleet and operations workflows. The current pages define a starting interface; they are not connected to a server, database, authentication provider, or payment system.
+Routewise is an early browser-based HTML prototype for company fleet and operations workflows. The current pages define a starting interface with table-based navigation and static placeholders; they are not connected to a server, database, authentication provider, or payment system.
 
 ## Page Inventory
 
 ### Entry
 - src/index.html: demo login page. The Login link opens the general-user dashboard and does not validate the entered username or password.
 
+Each General User page has a table navbar at the top linking to all General User pages. The links stay within `src/generaluser/`.
+
 ### General users
 - src/generaluser/dashboard.html: summary tables for fleet/items, maintenance, token activity, company activity, and team access.
 - src/generaluser/fleet.html: fleet and tracked-item table.
-- src/generaluser/routes.html: route table; links to create_route.html.
-- src/generaluser/create_route.html: route entry form.
-- src/generaluser/maintenance.html: maintenance and issue overview; links to log_problem.html.
-- src/generaluser/log_problem.html: issue report form.
+- src/generaluser/routes.html: route table.
+- src/generaluser/create_route.html: route creation placeholder; no form is present.
+- src/generaluser/maintenance.html: maintenance and issue overview.
+- src/generaluser/log_problem.html: issue reporting placeholder; no form is present.
 - src/generaluser/logs.html: issue and maintenance history table.
 - src/generaluser/tokens.html: read-only token activity view.
 
+Each Company Admin page has a table navbar at the top linking to all Company Admin pages. The links stay within `src/Admin/`.
+
 ### Company admins
-- src/Admin/admin_dashboard.html: company summary and links to company-admin pages.
-- src/Admin/user_overviews.html: company user table; links to create_new_user.html.
-- src/Admin/create_new_user.html: user creation form with general-user and company-admin roles.
+- src/Admin/admin_dashboard.html: company summary.
+- src/Admin/user_overviews.html: company user table.
+- src/Admin/create_new_user.html: user creation placeholder; no form is present.
 - src/Admin/token_management.html: company token purchase history placeholder.
 - src/Admin/activity_logs.html: company activity history placeholder.
 - src/Admin/company_settings.html: company details and preferences placeholders.
@@ -36,7 +40,8 @@ General users are intended to use operational pages and view token activity. The
 ## Current Behavior and Limitations
 
 - Tables use empty-state text because no data source is connected.
-- Forms are visual prototypes. They do not save data or create accounts, routes, or issue reports.
+- Create-user, create-route, and report-problem pages currently show placeholders and do not accept or save input.
+- Navigation links organize pages by role but do not enforce permissions; pages can still be opened directly by URL.
 - The login page is a navigation link, not authentication.
 - Token balances and purchases are not implemented.
 - Admin pages can be opened directly and are not protected by role checks.

@@ -2,39 +2,40 @@
 
 ## Current Version
 
-This guide describes the static HTML prototype. Pages and forms show the planned workflow, but they do not load or save real company data.
+This guide describes the static HTML prototype. Pages show planned workflows using tables and placeholders; they do not load or save real company data.
 
 ## Preview the General-User Pages
 
 1. Open src/index.html in a web browser.
 2. Entering credentials is optional; the fields are not validated.
 3. Select Login. The link opens src/generaluser/dashboard.html for every visitor.
-4. Open other HTML files under src/generaluser/ directly to inspect their placeholders.
+4. Use the table navbar at the top of each page to open other General User pages. Its links stay within src/generaluser/.
 
 ## Preview the Company-Admin Pages
 
-Open src/Admin/admin_dashboard.html directly. Its navigation links open the company user list, user creation form, token management, activity history, and company settings pages.
+Open src/Admin/admin_dashboard.html directly. The table navbar at the top of each Admin page links to the other Admin pages and stays within src/Admin/.
 
 ## Page Guide
 
 - Dashboard: overview tables for fleet/items, maintenance, tokens, activity, and team access.
 - Fleet: planned list of company trucks and tracked items.
-- Routes: planned route list. The Create a route link opens the route form.
-- Create Route: fields for route name, start, destination, vehicle, date, and notes.
-- Maintenance and Issues: planned maintenance and issue overview. Report a problem opens the issue form.
-- Report a Problem: fields for the affected item, issue type, priority, description, and date noticed.
+- Routes: planned route list.
+- Create Route: placeholder; route creation is not available yet.
+- Maintenance and Issues: planned maintenance and issue overview.
+- Report a Problem: placeholder; problem reporting is not available yet.
 - Issue and Maintenance Logs: planned history of reported issues and service records.
 - Token Balance: general users can view token activity; purchasing is reserved for company admins.
 - Company Admin Dashboard: company summary and links to admin tools.
-- Company Users: planned user list. Create a user opens the user form.
-- Create User: fields for name, email, and company role.
+- Company Users: planned user list.
+- Create User: placeholder; user creation is not available yet.
 - Token Management: planned company token balance and purchase history.
 - Company Activity: planned company-wide activity history.
 - Company Settings: placeholder for company details and preferences.
 
 ## Important Limitations
 
-- Form buttons do not submit data to a server.
+- Create-user, create-route, and report-problem pages are placeholders with no input controls.
+- Table-navbar links navigate between pages but do not enforce role permissions. A page can still be opened directly by URL.
 - Empty tables and unavailable values are expected until a data source is added.
 - The demo login does not authenticate users or choose a page based on role.
 - Admin pages are not access-controlled. Do not use the prototype with sensitive or real company data.

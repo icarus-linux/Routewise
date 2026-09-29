@@ -5,13 +5,15 @@ Routewise is a browser-based fleet and operations management project. It is curr
 
 Current Pages
 - src/index.html: demo login page. The Login link opens the general-user dashboard without checking credentials.
+- Every general-user page has a table navbar linking to pages in src/generaluser/ only.
+- Every company-admin page has a table navbar linking to pages in src/Admin/ only.
 - src/generaluser/dashboard.html: general-user dashboard overview.
 - src/generaluser/fleet.html: fleet and item list placeholder.
-- src/generaluser/routes.html and create_route.html: route list and route form placeholders.
-- src/generaluser/maintenance.html, log_problem.html, and logs.html: maintenance overview, issue report form, and issue history placeholders.
+- src/generaluser/routes.html and create_route.html: route list and non-interactive route-creation placeholder.
+- src/generaluser/maintenance.html, log_problem.html, and logs.html: maintenance overview, non-interactive issue-report placeholder, and issue history placeholders.
 - src/generaluser/tokens.html: read-only token activity placeholder.
 - src/Admin/admin_dashboard.html: company-admin overview and links.
-- src/Admin/user_overviews.html and create_new_user.html: company user list and creation form placeholders.
+- src/Admin/user_overviews.html and create_new_user.html: company user list and a non-interactive user-creation placeholder.
 - src/Admin/token_management.html: company token purchase and balance placeholder.
 - src/Admin/activity_logs.html and company_settings.html: company activity and settings placeholders.
 
@@ -21,7 +23,7 @@ Intended Roles
 - The current HTML prototype does not enforce these roles or permissions.
 
 Current Limitations
-The pages contain static markup only. Forms do not create or save records, tables do not load company data, and login, token purchases, and access control are not connected to a backend. Empty tables and unavailable values are expected.
+The pages contain static markup only. Create and report pages display placeholders instead of forms. Tables do not load company data, and login, token purchases, and access control are not connected to a backend. Empty tables and unavailable values are expected. The role-specific navbars do not prevent direct access to pages in the other role folder.
 
 Project Folders
 - src/: application pages
