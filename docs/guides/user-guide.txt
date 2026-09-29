@@ -1,0 +1,39 @@
+# Routewise User Guide
+
+## Overview
+
+Routewise is a browser-based platform for monitoring vehicle activity, company operations, and related business information from a single dashboard.
+
+## Getting Started
+
+1. Open the application in your browser.
+2. Sign in using your account credentials or create a new account if required.
+3. Open the dashboard to view live company and operational information.
+4. Navigate through the main sections to access vehicle data, admin tools, and user management features.
+
+## Main Features
+
+- Fleet and vehicle tracking
+- Company dashboard overview
+- Admin controls for settings and access
+- User management tools
+- Operational visibility for business workflow monitoring
+
+## Typical Workflow
+
+- Log in to the application
+- Review the dashboard summary
+- Open relevant operational sections
+- Manage users or company settings when required
+- Use the available tools to keep company information organized and visible
+
+## Best Practices
+
+- Keep credentials secure
+- Review the dashboard regularly for status updates
+- Use admin settings only when needed
+- Update documentation and support files whenever the system changes
+
+## Support
+
+If you are unable to access the platform or need help with setup, refer to the troubleshooting guide and project documentation.

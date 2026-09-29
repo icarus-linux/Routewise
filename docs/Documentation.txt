@@ -1,0 +1,40 @@
+# Routewise Documentation
+
+This document records the project purpose, structure, and ongoing documentation standards so contributors and future users can understand the workflow and project direction.
+
+## Project Purpose
+
+Routewise is a browser-based business platform intended to help companies track vehicle activity, operational information, and company-level visibility in a simple and affordable way. It is currently being developed as a practical learning project with long-term potential for real-world use.
+
+## Current Project Structure
+
+The project follows a clean organization model to keep the root folder uncluttered:
+
+- readme.md: project overview and entry point
+- src/: front-end application files
+- assets/: visual elements and branding resources
+- docs/: all text documentation and project guides
+- docs/guides/: user guide and troubleshooting documentation
+
+## Documentation Standards
+
+- Keep the main project root limited to the README and required code/assets.
+- Store support documents in the docs folder.
+- Use clear naming conventions for project files.
+- Keep documentation consistent with the current codebase.
+- Update the README whenever a major new folder or structure change is introduced.
+
+## Public Updates
+
+Progress updates, walkthroughs, and project announcements will be shared through the project YouTube channel:
+
+- https://www.youtube.com/@icarus-svg
+
+## Contact
+
+- Email: routewise.temp@proton.me
+- YouTube: https://www.youtube.com/@icarus-svg
+
+## Future Note
+
+Text-based documentation should later be converted into PDF format for sharing and archiving.

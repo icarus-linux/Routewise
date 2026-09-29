@@ -1,0 +1,52 @@
+Routewise is a browser-based platform for companies to monitor vehicles, operations, and internal business activity through a simple web interface. The project is being developed as a practical learning initiative with potential for future monetization and real-world deployment.
+
+The platform is intended to be used in a local or controlled environment unless otherwise stated. The goal is to provide businesses with clear access to operational visibility without unnecessary complexity.
+
+## Project Vision
+
+Routewise aims to deliver a modern, minimal, and user-friendly experience for managing company operations. The platform should be simple enough for everyday use while still offering the tools needed for administration and oversight.
+
+## Core Product Goals
+
+- Browser-based access
+- Minimal and modern user experience
+- Clear navigation and dashboard flow
+- Company-level operational visibility
+- Admin controls for users and settings
+- Simple onboarding for new companies
+- Low-cost and scalable project approach
+- Support channels and public documentation
+
+## Business Direction
+
+The project is intended to balance usefulness, affordability, and clarity. It should remain cost-conscious while still providing value to businesses that need to track vehicles and operational information efficiently.
+
+## Project Structure
+
+The repository follows a clean structure so the main project folder stays organized:
+
+- readme.md: main project overview
+- src/: application code and front-end files
+- assets/: logos and visual assets
+- docs/: project documentation, references, and guides
+- docs/guides/: user guide and troubleshooting guide
+
+This structure keeps the project easy to navigate and avoids mixing code, assets, and documentation in the same folder.
+
+## Support Model
+
+A strong support structure is part of the project vision. Routewise aims to provide:
+
+- AI support available 24/7
+- Live support during the day
+- Public updates and walkthroughs
+- Clear documentation for users and contributors
+
+## Contact
+
+- Email: routewise.temp@proton.me
+- YouTube: https://www.youtube.com/@icarus-svg
+
+## Final Notes
+
+Routewise is designed to be practical, adaptable, and easy to grow over time. The project values documentation, clear communication, and maintainable structure so contributors can understand the system and continue improving it.

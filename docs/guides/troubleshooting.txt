@@ -1,0 +1,27 @@
+# Troubleshooting Guide
+
+## Common Issues
+
+### Application does not load
+Check that the project is running in the correct local environment and confirm all required files are present.
+
+### Login or access problems
+Verify credentials and confirm that the user account has the correct permissions and access level.
+
+### Missing or incorrect data shown
+Refresh the page, confirm the environment is connected, and review the project configuration or relevant setup files.
+
+### Dashboard looks incomplete or empty
+Check whether the application is running properly and whether the required data source or local environment is available.
+
+## Quick Checklist
+
+- Confirm the app is running locally
+- Verify browser access and internet/local connectivity
+- Check login credentials and access permissions
+- Refresh the page before continuing
+- Review the documentation for setup or feature changes
+
+## Support
+
+If the issue continues, review the project documentation in the docs folder and contact the project maintainer through the contact information listed in the project files.

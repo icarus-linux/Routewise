@@ -67,6 +67,20 @@ Progress, walkthroughs, and public updates will be shared on the project YouTube
 
 - https://www.youtube.com/@icarus-svg
 
+## Project Structure
+
+The repository is organized to keep the root clean and easy to navigate:
+
+- readme.md stays in the main project folder as the primary entry point.
+- src/ contains the application HTML and front-end code.
+- assets/ stores branding and image resources.
+- docs/ contains the project documentation, user guides, and troubleshooting files.
+- docs/guides/ contains the user guide and troubleshooting guide.
+
+This keeps the main folder focused and helps contributors find documentation and assets without cluttering the project root.
+
+Any time a new project folder is added, this section should be updated so the README continues to reflect the structure accurately.
+
 ## Notes
 
 Routewise is positioned as an approachable, adaptable, and practical project intended to grow through use, documentation, and gradual improvement. It is meant to be useful for businesses while remaining flexible enough to support future development and broader adoption.
