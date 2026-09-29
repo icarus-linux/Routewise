@@ -6,45 +6,28 @@
 	<title>Report a Problem</title>
 </head>
 <body>
+	<nav aria-label="General user navigation">
+		<table>
+			<tr>
+				<td><a href="dashboard.html">Dashboard</a></td>
+				<td><a href="fleet.html">Fleet</a></td>
+				<td><a href="routes.html">Routes</a></td>
+				<td><a href="create_route.html">Create a route</a></td>
+			</tr>
+		<tr>
+				<td><a href="maintenance.html">Maintenance</a></td>
+				<td><a href="log_problem.html">Report a problem</a></td>
+				<td><a href="logs.html">Issue and maintenance logs</a></td>
+				<td><a href="tokens.html">Token balance</a></td>
+			</tr>
+		</table>
+	</nav>
 	<header>
 		<h1>Report a Problem</h1>
-		<a href="maintenance.html">Back to maintenance</a>
 	</header>
 
 	<main>
-		<form>
-			<p>
-				<label for="item">Truck or item</label>
-				<select id="item" name="item" required>
-					<option value="">Select a truck or item</option>
-				</select>
-			</p>
-			<p>
-				<label for="issue-type">Issue type</label>
-				<select id="issue-type" name="issue-type" required>
-					<option value="">Select an issue type</option>
-					<option value="maintenance">Maintenance</option>
-					<option value="damage">Damage</option>
-					<option value="other">Other</option>
-				</select>
-			</p>
-			<p>
-				<label for="priority">Priority</label>
-				<select id="priority" name="priority" required>
-					<option value="normal">Normal</option>
-					<option value="urgent">Urgent</option>
-				</select>
-			</p>
-			<p>
-				<label for="description">Description</label>
-				<textarea id="description" name="description" rows="5" required></textarea>
-			</p>
-			<p>
-				<label for="reported-date">Date noticed</label>
-				<input id="reported-date" name="reported-date" type="date">
-			</p>
-			<button type="submit">Submit report</button>
-		</form>
+		<p>Problem reporting is not available yet.</p>
 	</main>
 </body>
 </html>
