@@ -6,10 +6,14 @@ This document describes the current prototype, its page organization, the role-s
 
 Routewise is an early browser-based HTML prototype for company fleet and operations workflows. The current pages define a starting interface with table-based navigation and static placeholders; they are not connected to a server, database, authentication provider, or payment system.
 
+The shared presentation layer is stored separately in src/styles/styles.css. It applies the Routewise navy-and-teal palette, responsive layouts, branded page headers, active-page navigation states, and dashboard tile grids. Page headers use the Routewise icon in assets/logo/routewise-logo-kit/.
+
 ## Page Inventory
 
 ### Entry
 - src/index.html: demo login page. The Login link opens the general-user dashboard and does not validate the entered username or password.
+- src/styles/styles.css: shared responsive styling for the entry, general-user, and company-admin pages.
+- assets/logo/routewise-logo-kit/: brand marks and related visual assets; page headers use routewise-icon.svg.
 
 Each General User page has a table navbar at the top linking to all General User pages. The links stay within `src/generaluser/`.
 
@@ -53,11 +57,17 @@ General users are intended to use operational pages and view token activity. The
 - src/index.html: demo entry/login page
 - src/generaluser/: general-user HTML pages
 - src/Admin/: company-admin HTML pages
+- src/styles/: shared CSS presentation layer
 - assets/: branding and visual assets
+- assets/logo/routewise-logo-kit/: Routewise logo kit
 - docs/: project guides and documentation
 - docs/guides/: user guide and troubleshooting guide
 
 Keep documentation in docs/ and update the README when project folders or major capabilities change. Text documentation is kept in plain text for now; PDF conversion is a later distribution or archiving step.
+
+## Styling and Preview
+
+All HTML pages load src/styles/styles.css using a relative path. Preserve the src/styles/ folder and assets/logo/routewise-logo-kit/ when copying or moving pages. Open src/index.html in a browser to preview the general-user flow; open src/Admin/admin_dashboard.html directly to preview the admin pages. The dashboard tile grid changes to a single column on narrow screens, and wide tables can scroll within their content area.
 
 ## Contact and Updates
 

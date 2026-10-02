@@ -32,7 +32,12 @@ This project is built around a few core principles:
 - General-user page placeholders in `src/generaluser/`
 - Company-admin page placeholders in `src/Admin/`
 - HTML table navigation at the top of each role page, linking only to pages in that role's folder
+- Shared responsive styling in `src/styles/styles.css`, using the Routewise navy-and-teal brand palette
+- Routewise logo marks in page headers and active-page indicators in role navigation
+- Dashboard overview sections arranged as a responsive tile grid
 - Static tables and text placeholders for planned workflows; create and report pages are not interactive forms
+
+To preview the prototype, open `src/index.html` in a browser. The stylesheet and logo use relative paths, so keep the repository folder structure intact. The admin dashboard can also be opened directly at `src/Admin/admin_dashboard.html`.
 
 The login link currently opens the general-user dashboard without validating credentials. Tables are not connected to a data source, and role-specific navigation does not provide access control. Company-admin pages are not protected by authentication or role checks.
 
@@ -71,7 +76,8 @@ The repository is organized to keep the root clean and easy to navigate:
 - src/index.html is the demo login page.
 - src/generaluser/ contains general-user pages for dashboards, fleet, routes, issues, logs, and token activity.
 - src/Admin/ contains company-admin pages for the admin dashboard, user management, token management, activity, and settings.
-- assets/ stores branding and image resources.
+- src/styles/ contains the shared stylesheet.
+- assets/ stores branding and image resources, including the Routewise logo kit.
 - docs/ contains the project documentation, user guides, and troubleshooting files.
 - docs/guides/ contains the user guide and troubleshooting guide.
 

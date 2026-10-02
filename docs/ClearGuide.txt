@@ -7,6 +7,8 @@ Current Pages
 - src/index.html: demo login page. The Login link opens the general-user dashboard without checking credentials.
 - Every general-user page has a table navbar linking to pages in src/generaluser/ only.
 - Every company-admin page has a table navbar linking to pages in src/Admin/ only.
+- All pages use the shared stylesheet at src/styles/styles.css and the Routewise icon from assets/logo/routewise-logo-kit/.
+- The current page is highlighted in its navbar. The General User and Company Admin dashboards arrange summary sections as responsive tiles.
 - src/generaluser/dashboard.html: general-user dashboard overview.
 - src/generaluser/fleet.html: fleet and item list placeholder.
 - src/generaluser/routes.html and create_route.html: route list and non-interactive route-creation placeholder.
@@ -29,12 +31,17 @@ Project Folders
 - src/: application pages
 - src/generaluser/: general-user pages
 - src/Admin/: company-admin pages
+- src/styles/: shared responsive styles for all HTML pages
 - assets/: logos and visual assets
+- assets/logo/routewise-logo-kit/: Routewise logos, icons, and brand assets
 - docs/: project documentation
 - docs/guides/: user and troubleshooting guides
 
 Preview
-Open src/index.html in a browser. To inspect the company-admin area, open src/Admin/admin_dashboard.html directly. The login page currently routes only to the general-user dashboard.
+Open src/index.html in a browser. To inspect the company-admin area, open src/Admin/admin_dashboard.html directly. The login page currently routes only to the general-user dashboard. Keep the folder structure intact so relative stylesheet and logo paths resolve correctly.
+
+Visual styling
+The static interface uses the Routewise navy-and-teal palette, a light neutral background, bordered content tiles, and responsive navigation and tables. Styling is maintained separately from page markup in src/styles/styles.css.
 
 Project direction
 Routewise aims to become a clear, affordable tool for company fleet operations. Support services, live data, payments, and production-ready account security are future work, not features of the current prototype.

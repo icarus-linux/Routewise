@@ -9,11 +9,17 @@ This guide describes the static HTML prototype. Pages show planned workflows usi
 1. Open src/index.html in a web browser.
 2. Entering credentials is optional; the fields are not validated.
 3. Select Login. The link opens src/generaluser/dashboard.html for every visitor.
-4. Use the table navbar at the top of each page to open other General User pages. Its links stay within src/generaluser/.
+4. Use the navbar at the top of each page to open other General User pages. Its links stay within src/generaluser/. The current page is highlighted.
 
 ## Preview the Company-Admin Pages
 
-Open src/Admin/admin_dashboard.html directly. The table navbar at the top of each Admin page links to the other Admin pages and stays within src/Admin/.
+Open src/Admin/admin_dashboard.html directly. The navbar at the top of each Admin page links to the other Admin pages and stays within src/Admin/. The current page is highlighted.
+
+## Appearance and Layout
+
+Pages share the Routewise brand styling: a navy-and-teal palette, the Routewise icon beside page titles, and light bordered content tiles. The General User and Company Admin dashboards show overview sections in a responsive tile grid. On narrow screens, dashboard tiles stack vertically and wide tables can scroll horizontally.
+
+The stylesheet is src/styles/styles.css. The logo is loaded from assets/logo/routewise-logo-kit/routewise-icon.svg. Keep these paths and folders in place when previewing or copying the pages.
 
 ## Page Guide
 

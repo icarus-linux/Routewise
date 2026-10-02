@@ -22,11 +22,18 @@ Token balances and purchases are not implemented. General-user token information
 ### A page link does not open
 Keep the existing directory structure so relative links work. General-user files belong in src/generaluser/ and company-admin files belong in src/Admin/. Each table navbar only links to pages in its own role folder.
 
+### The page looks unstyled or the logo is missing
+The HTML pages load their shared stylesheet from src/styles/styles.css and the logo from assets/logo/routewise-logo-kit/routewise-icon.svg. Keep those paths and folders intact, and avoid separating an HTML file from its assets. Reload the page after restoring a missing file.
+
+### The dashboard tiles or tables look crowded on a small screen
+The dashboard grid becomes a single column on narrow screens. Wide tables can scroll within their content area; swipe or scroll horizontally over the table to see additional columns.
+
 ## Preview Checklist
 
 - Open src/index.html in a browser.
 - Confirm the expected HTML file exists at the linked path.
 - Keep the src/generaluser/ and src/Admin/ folder names and capitalization unchanged.
+- Keep src/styles/styles.css and assets/logo/routewise-logo-kit/ in their original locations.
 - Remember that tables are not connected to persistent data and create/report pages are placeholders.
 
 ## Security Note
